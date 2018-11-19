@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Zadanie 5</title>
+ <link rel="stylesheet" type="text/css" href="style.css"></head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+ 
+<body>
+<script src="myscript.js"></script>
+  <header>
+    <h1>PARAGON 05-11-18/2137</h1>
+  </header>
+  <main>
+    <table>
+      <thead>
+        <tr>
+          <th class="lp">LP</th>
+          <th class="nazwa">NAZWA</th>
+          <th>ILOŚĆ</th>
+          <th>CENA</th>
+          <th>SUMA</th>
+          <th>AKCJA</th>
+        </tr>
+      </thead>
+      <tbody id="itemContainer">
+        <tr id="pattern" style="visibility: collapse">
+          <td class="no"></td>
+          <td class="name"></td>
+          <td class="quantity"></td>
+          <td class="price"></td>
+          <td class="sum"></td>
+          <td class="btns"><input type="button" value="Usun" id="delbtn"/></td>
+          </tr>
+      </tbody>
+    </table>
+  </main>
+  <form id="addItem">
+    <table>
+      <thead>
+        <tr><td colspan="2">
+          <h2>Nowa pozycja</h2>
+        </td></tr>
+      </thead>
+      <tr>
+        <td>Nazwa:</td>
+        <td><input id="nameToAdd"></td>
+      </tr>
+      <tr>
+        <td>Ilość:</td>
+        <td><input id="quantityToAdd"></td>
+      </tr>
+      <tr>
+        <td>Cena:</td>
+        <td><input id="priceToAdd"></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="right">
+          <input type="submit" value="dodaj" id="addBtn">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
